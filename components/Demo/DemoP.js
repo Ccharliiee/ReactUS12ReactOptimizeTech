@@ -1,8 +1,9 @@
 import React from "react";
+import DemoPC from "./DemoPC";
 
 const DemoP = (props) => {
   console.log("DemoOutput RUNNING");
-  return <p>{props.show ? "This is new!" : ""}</p>;
+  return <DemoPC>{props.show ? "This is new!" : ""}</DemoPC>;
 };
 
-export default DemoP;
+export default React.memo(DemoP);
